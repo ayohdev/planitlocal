@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "components/DataBase.js", "app/lib/SupaBase.tsx", "components/Auth.js"  ]
 }
