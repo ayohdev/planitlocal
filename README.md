@@ -1,50 +1,141 @@
-# Welcome to your Expo app 👋
+## Project Setup Instructions for Local Environment
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This document provides step-by-step instructions to set up the local development environment for the project on both macOS and Windows.
 
-## Get started
+### Prerequisites
 
-1. Install dependencies
+- Node.js (v14.x or later)
+- npm (v6.x or later) or Yarn (v1.x or later)
+- Git
 
-   ```bash
+### macOS Setup Instructions
+
+1. **Install Homebrew**
+
+   Homebrew is a package manager for macOS. You can install it by running the following command in your Terminal:
+
+   ```sh
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+
+2. **Install Node.js and npm**
+
+   Once Homebrew is installed, you can install Node.js and npm with the following command:
+
+   ```sh
+   brew install node
+   ```
+
+3. **Clone the Repository**
+
+   Open your Terminal and run the following commands to clone the repository and navigate into the project directory:
+
+   ```sh
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+
+4. **Install Dependencies**
+
+   Install the required dependencies using npm or Yarn:
+
+   ```sh
    npm install
+   # or
+   yarn install
    ```
 
-2. Start the app
+5. **Start the Development Server**
 
-   ```bash
-    npx expo start
+   To start the development server, run:
+
+   ```sh
+   npm start
+   # or
+   yarn start
    ```
 
-In the output, you'll find options to open the app in a
+6. **Open the Project in a Code Editor**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   It's recommended to use Visual Studio Code for editing the project. You can download it [here](https://code.visualstudio.com/).
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Windows Setup Instructions
 
-## Get a fresh project
+1. **Install Chocolatey**
 
-When you're ready, run:
+   Chocolatey is a package manager for Windows. You can install it by running the following command in an elevated Command Prompt or PowerShell:
 
-```bash
-npm run reset-project
-```
+   ```sh
+   Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+   ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. **Install Node.js and npm**
 
-## Learn more
+   Once Chocolatey is installed, you can install Node.js and npm with the following command:
 
-To learn more about developing your project with Expo, look at the following resources:
+   ```sh
+   choco install nodejs
+   ```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. **Clone the Repository**
 
-## Join the community
+   Open your Command Prompt or PowerShell and run the following commands to clone the repository and navigate into the project directory:
 
-Join our community of developers creating universal apps.
+   ```sh
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. **Install Dependencies**
+
+   Install the required dependencies using npm or Yarn:
+
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+5. **Start the Development Server**
+
+   To start the development server, run:
+
+   ```sh
+   npm start
+   # or
+   yarn start
+   ```
+
+6. **Open the Project in a Code Editor**
+
+   It's recommended to use Visual Studio Code for editing the project. You can download it [here](https://code.visualstudio.com/).
+
+### Additional Configuration
+
+- **Environment Variables**
+
+  Ensure you have all necessary environment variables configured. You can create a `.env` file in the root of your project and add your variables there.
+
+- **Expo CLI**
+
+  If the project is using Expo, you might need to install the Expo CLI globally:
+
+  ```sh
+  npm install -g expo-cli
+  ```
+
+  Then, you can start the Expo server with:
+
+  ```sh
+  expo start
+  ```
+
+### Troubleshooting
+
+- **Common Issues**
+
+  - Ensure all dependencies are installed correctly.
+  - Check for any missing environment variables.
+  - Ensure you have the correct versions of Node.js and npm/Yarn.
+
+For more detailed information, please refer to the docs below:
