@@ -1,6 +1,6 @@
 ## Project Setup Instructions for Local Environment
 
-This document provides step-by-step instructions to set up the local development environment for the project on both macOS and Windows. WIll made this edit
+This document provides step-by-step instructions to set up the local development environment for the project on both macOS and Windows.
 
 ### Prerequisites
 
